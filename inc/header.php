@@ -106,10 +106,7 @@
       <link rel="stylesheet" type="text/css" href="./css/slide.css">
       <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 
-      
-
-
-
+    <script type="text/javascript" src="./js/url.js"></script>
       <?php 
 
       if($result){

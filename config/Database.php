@@ -2,8 +2,8 @@
 <?php
 Class Database{
 	public $host   = "localhost";
-	public $user   = "khmersha_Seunhak";
-	public $pass   = "123456789";
+	public $user   = "root";
+	public $pass   = "";
 	public $dbname = "khmersha_khmersharings";
 	
 	

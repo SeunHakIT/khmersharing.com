@@ -17,3 +17,6 @@ RewriteCond %{HTTP_REFERER} !^https://www.all.khmersharings.com$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://www.khmersharings.com/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^https://www.khmersharings.com$      [NC]
 RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
