@@ -41,42 +41,39 @@ $result=$db->select($select);
 
 
      <div class="container">
-
-
-       <!-- Swiper -->
-       <div class="swiper-container">
+      <!-- Swiper -->
+      <div class="swiper-container">
         <div class="swiper-wrapper">
-         <?php 
-         if($result){
-          while ($row=$result->fetch_assoc()) { ?>
+          <div class="swiper-slide">
+            <?php 
+
+            if($result){
+              while($row=$result->fetch_assoc()){?>
+
+
+                <h1><img src="administrator/images/<?php $row['image']; ?>" alt=""></h1>
 
 
 
+                <?php  } }?>
 
 
-            <div class="swiper-slide">
-
-              <img src="./images/<?php echo $row['image']; ?>" alt="" class="img-responsive">
+              </div>
 
             </div>
-            <?php } ?>
-            <?php } ?>
+            <!-- Add Pagination -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <!-- Add Pagination -->
-        
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+
         </div>
-
-
 
       </div>
 
     </div>
-
   </div>
-</div>
 
 
 
