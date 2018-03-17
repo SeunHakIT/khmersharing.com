@@ -1,9 +1,9 @@
-
+<?php ob_start(); ?>
 <?php
 Class Database{
-		public $host   = "localhost";
-	public $user   = "khmersha_Seunhak";
-	public $pass   = "123456789";
+	public $host   = "localhost";
+	public $user   = "root";
+	public $pass   = "";
 	public $dbname = "khmersha_khmersharings";
 	
 	

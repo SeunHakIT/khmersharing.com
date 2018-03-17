@@ -15,42 +15,49 @@
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-  <style>
-    body {
-      background: #fff;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
+<style>
     .swiper-container {
       width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      height: 100%;
     }
     .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 500px;
-
-    }
-    
-     .swiper-container1 {
-      width: 100%;
-      height: 50%;
-    }
-    .swiper-slide {
+      text-align: center;
       font-size: 18px;
-      height: auto;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 30px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
     }
-
   </style>
+
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 <!--    list_logo-->
 
@@ -106,7 +113,10 @@
       <link rel="stylesheet" type="text/css" href="./css/slide.css">
       <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 
-    <script type="text/javascript" src="./js/url.js"></script>
+      
+
+
+
       <?php 
 
       if($result){
@@ -185,5 +195,7 @@
                     </div>
                   </div>
                 </nav>
+
+                
 
                 <div class="container">
