@@ -113,10 +113,7 @@
       <link rel="stylesheet" type="text/css" href="./css/slide.css">
       <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
 
-      
-
-
-
+    
       <?php 
 
       if($result){
@@ -148,7 +145,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto ">
                       <li class="nav-item">
-                        <a class="nav-link" href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="khmersharings.com"><i class="fa fa-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
                       </li>
 
 
